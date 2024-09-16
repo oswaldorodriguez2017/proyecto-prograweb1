@@ -3,6 +3,7 @@ import TaskForm from './components/TaskForm';
 import TaskList from './components/TaskList';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import logo from './img/logo.png'
 
 const App = () => {
   // Función para cargar tareas desde localStorage
@@ -58,7 +59,15 @@ const App = () => {
   };
 
   return (
+    <div>
+      <div className='img-container' >
+          <img src={logo} alt='Prueba'></img> 
+      </div>
+      
+    
     <div className="container">
+      
+      
       <h1 className="text-center my-4">Lista de Tareas</h1>
       <TaskForm addTask={addTask} />
       
@@ -76,6 +85,8 @@ const App = () => {
         selectedTasks={selectedTasks} 
       />
     </div>
+    </div>
+
   );
 };
 

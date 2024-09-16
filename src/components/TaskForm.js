@@ -12,16 +12,16 @@ const TaskForm = ({ addTask }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="mb-3">
-      <div className="input-group">
+    <form onSubmit={handleSubmit} className="mb-3 ">
+      <div className="input-group  ">
         <input
           type="text"
-          className="form-control"
+          className="form-control mx-2"
           placeholder="Nueva tarea"
           value={task.title}
           onChange={(e) => setTask({ ...task, title: e.target.value })}
         />
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-primary mx-2">
           Agregar
         </button>
       </div>
